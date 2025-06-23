@@ -4,8 +4,8 @@ import java.util.UUID;
 
 public class DiscountedProduct extends Product {
 
-    private final double basePrice;
-    private final double discount;
+    private double basePrice;
+    private double discount;
 
     public DiscountedProduct(String name, double basePrice, double discount, UUID id) {
         super(name, id);

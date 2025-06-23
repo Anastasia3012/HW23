@@ -9,9 +9,9 @@ import java.util.UUID;
 
 public class Article implements Searchable {
 
-    private final String nameArticle;
-    private final String textArticle;
-    private final UUID id;
+    private String nameArticle;
+    private String textArticle;
+    private UUID id;
 
     public Article(String nameArticle, String textArticle, UUID id) throws BestResultNotFoundException {
         this.nameArticle = nameArticle;

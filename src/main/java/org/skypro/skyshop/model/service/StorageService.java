@@ -36,6 +36,10 @@ public class StorageService {
         return Collections.unmodifiableCollection(result);
     }
 
+    public Optional<Product> getProductById(UUID id) {
+        return Optional.ofNullable(productStorage.get(id));
+    }
+
     private void testData() throws BestResultNotFoundException {
         Product banana = new SimpleProduct("Банан", 67, UUID.randomUUID());
         this.productStorage.put(banana.getId(), banana);

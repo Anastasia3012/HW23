@@ -4,7 +4,7 @@ import java.util.UUID;
 
 public class SimpleProduct extends Product {
 
-    private final int price;
+    private int price;
 
     public SimpleProduct(String name, int price, UUID id) {
         super(name, id);

@@ -4,7 +4,7 @@ public class SearchResult {
 
     private final String id;
     private final String name;
-    private final String contentType;
+    private String contentType;
 
     public SearchResult(String id, String name, String contentType) {
         this.id = id;
