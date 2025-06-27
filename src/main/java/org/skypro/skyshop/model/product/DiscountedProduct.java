@@ -1,5 +1,6 @@
 package org.skypro.skyshop.model.product;
 
+import java.util.NoSuchElementException;
 import java.util.UUID;
 
 public class DiscountedProduct extends Product {
@@ -10,10 +11,10 @@ public class DiscountedProduct extends Product {
     public DiscountedProduct(String name, double basePrice, double discount, UUID id) {
         super(name, id);
         if (basePrice <= 0) {
-            throw new IllegalArgumentException("Неверное значение суммы");
+            throw new NoSuchElementException("Неверное значение суммы");
         }
         if (discount < 0 || discount > 100) {
-            throw new IllegalArgumentException("Неверные сумма скидки");
+            throw new NoSuchElementException("Неверные сумма скидки");
         }
         this.discount = discount;
         this.basePrice = basePrice;

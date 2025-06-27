@@ -5,7 +5,7 @@ import org.skypro.skyshop.model.product.DiscountedProduct;
 import org.skypro.skyshop.model.product.FixPriceProduct;
 import org.skypro.skyshop.model.product.Product;
 import org.skypro.skyshop.model.product.SimpleProduct;
-import org.skypro.skyshop.search.BestResultNotFoundException;
+import org.skypro.skyshop.exceptions.BestResultNotFoundException;
 import org.skypro.skyshop.search.Searchable;
 import org.springframework.stereotype.Service;
 
