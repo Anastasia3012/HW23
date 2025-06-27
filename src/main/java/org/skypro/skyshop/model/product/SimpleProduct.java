@@ -1,5 +1,6 @@
 package org.skypro.skyshop.model.product;
 
+import java.util.NoSuchElementException;
 import java.util.UUID;
 
 public class SimpleProduct extends Product {
@@ -9,7 +10,7 @@ public class SimpleProduct extends Product {
     public SimpleProduct(String name, int price, UUID id) {
         super(name, id);
         if (price <= 0) {
-            throw new IllegalArgumentException("Сумма некорректна");
+            throw new NoSuchElementException("Сумма некорректна");
         }
         this.price = price;
     }
